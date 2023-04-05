@@ -34,9 +34,9 @@ cparser::Element* ConfigParser::GetArgument(const char* del, Reader& reader) {
 
         switch (type) {
             case OMFLvariable::variableType::INT:
-                return new OMFLvariable::IntValue("", std::atoi(arg));
+                return new OMFLvariable::IntValue("", std::atoi(arg_string.c_str()));
             case OMFLvariable::variableType::FLOAT:
-                return new OMFLvariable::FloatValue("", std::atof(arg));
+                return new OMFLvariable::FloatValue("", std::atof(arg_string.c_str()));
             case OMFLvariable::variableType::STRING:
                 return new OMFLvariable::StringValue("", arg_string);
             case OMFLvariable::variableType::BOOL:
@@ -46,7 +46,7 @@ cparser::Element* ConfigParser::GetArgument(const char* del, Reader& reader) {
                 break;
         }
 
-        return new OMFLvariable::IntValue("", std::atoi(arg));
+        return new OMFLvariable::IntValue("", std::atoi(arg_string.c_str()));
     }
 }
 
