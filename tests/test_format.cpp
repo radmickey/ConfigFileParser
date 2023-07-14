@@ -1,4 +1,4 @@
-#include <lib/parser.h>
+#include "../include/ConfigFileParser.h"
 #include <gtest/gtest.h>
 
 #include <sstream>

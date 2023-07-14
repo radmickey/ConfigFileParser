@@ -1,1 +1,0 @@
-add_library(parser parser.cpp utils/utils.cpp utils/reader.cpp)

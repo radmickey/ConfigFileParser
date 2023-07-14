@@ -1,25 +1,5 @@
 # ConfigFileParser
 
-## Example of using
-```
-#include "lib/parser.h"
-#include <filesystem>
-
-int main(int argc, char** argv) {
-    std::string data = R"(
-        key = true
-        key1 = ["1", "2", "3"])";
-        
-    std::filesystem::path file_path = "./config.conf";
-    
-    auto data_str_parse = ConfigParser::parse(data);
-    auto data_path_parse = ConfigParser::parse(file_path);
-    
-    return 0;
-}
-```
-
-
 ## Format
 
  A config file is a text file in ASCII encoding. The following is a specification of the format.

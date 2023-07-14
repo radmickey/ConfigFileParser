@@ -1,4 +1,4 @@
-#include "lib/parser.h"
+#include "ConfigFileParser.h"
 
 int main(int argc, char** argv) {
     std::string data = R"(

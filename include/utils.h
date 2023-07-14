@@ -114,7 +114,7 @@ namespace OMFLvariable {
     public:
         IntValue(const std::string& name, int value);
 
-        IntValue& operator=(Variable& rhs);
+        IntValue& operator=(Variable& rhs) override;
 
         IntValue& Get();
 

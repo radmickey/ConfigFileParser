@@ -1,4 +1,4 @@
-#include "parser.h"
+#include "ConfigFileParser.h"
 
 cparser::Element* ConfigParser::GetArgument(const char* del, Reader& reader) {
     char ch;

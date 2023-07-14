@@ -20,7 +20,7 @@ add_executable(
 
 target_link_libraries(
     parser_tests
-    ITMLparse
+    ConfigFileParser
     GTest::gtest_main
 )
 

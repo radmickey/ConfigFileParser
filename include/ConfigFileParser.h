@@ -1,6 +1,6 @@
 #pragma once
 
-#include "utils/reader.h"
+#include "reader.h"
 
 #include <filesystem>
 #include <fstream>
@@ -22,6 +22,6 @@ namespace ConfigParser {
 
         ArgParser() = default;
 
-        cparser::Element& Get(const std::string& name) const;
+        [[nodiscard]] cparser::Element& Get(const std::string& name) const;
     };
 }  // namespace
